@@ -15,8 +15,12 @@ import java.awt.event.MouseEvent;
  * @author Nick
  */
 class CharacterEnvironment extends Environment {
+    
+    private Squirtle squirtleBig, squirtleSmall;
 
     public CharacterEnvironment() {
+        squirtleBig = new Squirtle(100, 100, 400, 400);
+        squirtleSmall = new Squirtle(600, 100, 200, 200);
     }
 
     @Override
@@ -40,7 +44,15 @@ class CharacterEnvironment extends Environment {
     }
 
     @Override
-    public void paintEnvironment(Graphics graphics) {
+    public void paintEnvironment(Graphics graphics) { 
+        if (squirtleBig != null) {
+            squirtleBig.draw(graphics);
+        }
+        if (squirtleSmall != null) {
+            squirtleSmall.draw(graphics);
+        }
     }
+   
+   
     
 }
