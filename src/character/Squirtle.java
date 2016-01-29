@@ -25,8 +25,7 @@ public class Squirtle {
         graphics.drawRect(x, y, width, height);
         
         //Body
-        graphics.setColor(Color.PINK);  
-//        graphics.fillRoundRect(x, y, width, height, 200, 200);     
+        graphics.setColor(Color.PINK);     
         graphics.fillOval(x+ (width * 15 / 100), y + (height * 30 / 100), width * 15 / 100 , height * 15 / 100);  
         graphics.fillOval(x, y, width, height);
         //left ear outside
